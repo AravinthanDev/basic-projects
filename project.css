@@ -1,0 +1,299 @@
+body{
+font-family:serif;
+font-weight:bold;
+margin:0px 100px;
+} 
+
+section{
+margin-top:150px;
+margin-bottom:100px;
+
+}
+
+/*---head -*/
+
+header{
+height:50px;
+width:100%;
+position:relative;
+top:0;
+display:flex;
+padding:10px;
+justify-content:space-between;
+align-items:center;
+}
+
+.stickey
+{
+position:sticky;
+top:0;
+padding:10px;
+
+z-index:2;
+width:100%;
+margin-bottom:200px;
+
+}
+li{
+list-style:none;
+}
+a{
+text-decoration:none;
+color:black;
+}
+
+.nav-links li {
+display:inline-block;
+padding:5px 30px;
+text-transform:uppercase;
+position:relative;
+
+}
+.nav-links li a::after{
+content:'';
+width:0;
+height:3px;
+background:#ff004f;
+position:absolute;
+left:0;
+bottom:-6px;
+transition:0.5s;
+}
+
+.nav-links li a:hover::after{ 
+width:80%;
+}
+.cta-button{
+margin-right:150px;
+padding:5px;
+border:2px solid #000;
+background:none;
+cursor:pointer;
+ }
+.cta-button:hover{
+color:white;
+background-color:#ff004f;
+transition:0.5s;
+}
+
+             /*!--hero section--!*/
+.main{
+margin-top:50px;
+display :flex;
+}
+.left-side{
+flex:0.5;
+
+}
+.img{
+width:700px;
+height:700px;
+background-color:black;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:130px 320px 235px 425px;
+}
+
+
+.rightside{
+flex:0.5;
+
+}
+.myname{ 
+width:100%;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+margin-left:-30px;
+}
+ h1{ font-size:60px;
+margin-bottom:0px;
+margin-top:-2px;
+}
+ h2{font-size:35px;
+margin-bottom:-10px;}
+
+.myname h3{font-size:30px;
+margin-top:-5px;
+}
+.cv {
+width:100px;
+padding:10px 15px;
+background-color:black;
+color:white;
+border-radius:5px;
+
+}
+.cv:hover{
+background-color:white;
+color:black;
+border:2px solid;
+transition:.2s linear;
+
+}/*!-- about section--!*/
+.about{
+margin-top:50px;
+display:flex;
+}
+.my-img{
+flex:0.3;
+}
+.my-self{
+flex:0.7;
+}
+.tab-title{
+display:flex;
+margin:20px 0px 20px;
+}
+.tab-link{
+margin-left:30px;
+cursor:pointer;
+position:relative;
+}
+
+.tab-link::after{
+content:'';
+width:0;
+height:3px;
+background:#ff004f;
+position:absolute;
+left:0;
+bottom:-8px;
+transition:0.5s;
+}
+.tab-link.active-link::after{
+width:80%;
+}
+.tab-content ul li span{
+color:#ff004f;
+}.tab-content ul li{
+margin:10px 0;
+}
+
+.tab-content{
+display:none;
+}
+
+.tab-content.active-content{
+display:block;
+}
+.about{
+height:300px;
+}
+/* ---serivce section----*/
+
+.serivce-main{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+grid-gap:40px;
+margin-top:50px;
+
+}
+.service h3 { 
+font-size:30px;
+}
+
+.service i{font-size:45px;
+}
+.fa-react{
+color:skyblue;}
+.fa-wordpress{
+color:darkblue;
+}
+.serivce-main div{
+background:#FCF7F6 ;
+padding:40px;
+transition:background 0.5s,transform 0.5s;
+}
+.serivce-main div:hover{
+transform:translateY(-10px);
+background:#ff004f ;
+}
+
+/* ---porfolio section----*/
+.porfolio-list {
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+grid-gap:40px;
+margin-top:40px;
+}
+.porfolio-item{
+border-radius:10px;
+position:relative;
+overflow:hidden;
+transition:0.5s ease;
+}
+.porfolio-item img{
+width:100%;
+border-radius:10px;
+display:block;
+}
+.porfolio-item:hover{
+transform:scale(1.5);
+z-index:1;
+}
+
+/*-----contact----*/
+.contact-me{background:#fff8f6;}
+.contact-main{
+display:flex;
+margin-top:50px;
+
+
+}
+.contact-detail{
+flex:0.4;
+}
+.contact-box{
+flex:0.6;
+
+
+}
+
+.contact-box input,textarea{
+display:block;
+width:60%;
+padding:10px;
+margin:10px 0;
+outline:none;
+border:1px solid black;
+
+font-size:18px;
+border-radius:5px;
+
+}.contact-detail i{
+font-size:40px;
+margin:2px;
+}.contact-detail i:hover
+{
+transform:translateY(-10px);
+
+}
+.contact-box button{
+margin:15px;
+padding:10px 15px;
+background-color:black;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+.contact-box button:hover
+{
+background-color:white;
+color:black;
+border:2px solid;
+transition:.2s linear;
+}
+/*----fotter--*/
+.footer{
+text-align:center;
+}
+/*-------samller device for---*/
+@media screen and (max-width: 300px) {
+.contact-main{
+display:none;
+width:100%;}
+}
+
